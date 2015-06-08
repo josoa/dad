@@ -100,6 +100,7 @@ a:hover, a:target, a:active {
 	font-weight: 700;
 }
 
+
 li {
 	list-style: none;
 	margin-bottom: .45em;
@@ -141,6 +142,11 @@ a:link, a:visited {
 a:hover, a:target {
 	background: #CF2721;
 	color: #E8D2B2;
+}
+
+
+a[href="index.html"]:link, a[href="index.html"]:visited, a[href="index.html"]:hover, a[href="index.html"]:target, a[href="index.html"]:active {
+	color: #fff;
 }
 
 h2 {
