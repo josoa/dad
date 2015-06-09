@@ -2,7 +2,7 @@
 
 .container {
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 
 .group:after {
@@ -65,7 +65,7 @@ h1 em {
 }
 
 h2 {
-	font-size: 2.125em; 
+	font-size: 2.25em; 
 	text-transform: lowercase;
 	border-bottom: 3px solid white;
 	margin-bottom: 15px;
@@ -79,11 +79,13 @@ h3 {
 p {
 	text-align: justify;
 	margin-bottom: 1em;
+	line-height: 1.568em;
 }
 
 em {
 	font-style: normal;
 	text-transform: uppercase;
+	padding: 3px;
 }
 
 a:link, a:visited {
@@ -91,7 +93,7 @@ a:link, a:visited {
 	text-transform: uppercase;
 }
 
-p em, a:hover, a:target, a:active {
+p em, a:link, a:visited {
 	font-weight: 700;
 }
 
@@ -123,18 +125,18 @@ blockquote:before, blockquote:after {
 /* colors */
 
 body {
-	background: #E8D2B2;
+	background: #EFDBC5;
 	background-image: url('../img/natural-paper.png');
 	background-attachment: fixed;
-	color: #fff;
+	color: #555;
 }
 
 a:link, a:visited {
-	color: #7592A4;
+	color: #EE204D;
 }
 
 a:hover, a:target {
-	background: #7592A4;
+	background: #EE204D;
 	color: #E8D2B2;
 }
 
@@ -143,31 +145,27 @@ a[href="index.html"]:link, a[href="index.html"]:visited, a[href="index.html"]:ho
 }
 
 h2 {
-	color: #7592A4
+	color: #EE204D;
 }
 
 h3 {
-	color: #BCC590;
+	color: #6DAE81;
 }
 
 em {
-	background: #F4D844;
+	background: #FDDB6D;
 }
 
-/* #7592A4 blue
-#F4D844 yellow
-#E8D2B2 tan
-#CF2721 red
-#BCC590 green
-
-
+blockquote:before, blockquote:after {
+	color: #6DAE81;
+}
 
 /* image */
 
 img {
 	width: 80%;
 	margin: 10px auto;
-	border: 6px solid #BCC590;
+	border: 7px solid #77DDE7;
 	display: block;
 }
 
@@ -178,6 +176,7 @@ header {
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: 2;
 }
 
 /* nav */
@@ -192,8 +191,9 @@ nav ul li {
 }
 
 nav ul li a {
-	line-height: 4.5em;
+	line-height: 3.5em;
 	display: block;
+	font-size: 1.5em;
 }
 
 
